@@ -103,11 +103,20 @@
     padding-top: 10rem;
     padding-bottom: 7rem;
   }
+  .menu-mobile {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1000px) {
   .layout {
     max-width: auto;
+  }
+  .menu-mobile--show {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
   }
   .navbar__nav {
     display: none;
